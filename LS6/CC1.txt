@@ -1,0 +1,40 @@
+***** TP1 *****
+- conversions
+- chaine de caractere -> len(str) : longueur du mot str
+                      -> str in str1 : True si str est dans str1 ("e" in "hello" = True)
+                      -> str(obj) : transforme obj en str
+
+
+***** TP2 *****
+- tuples : t = (1, 2, ’a’, 3.2)
+
+-liste : -> list(range(0, 10, 2)) # [0,2,4,6,8]
+         -> parcours d'une liste ([x for x in [1, 2, 3, 4, 5] if x % 2 != 0]  # [1,3,5])
+         -> list(zip(l,m)) : donne la liste des couples [(l1,m1),(l2,m2),...] (pour l et m 2 liste de meme longueur)
+         -> split : str.split() transforme str en liste
+
+***** TP3 *****
+- Ensemble : set(range(1, 5)) ou s = {1, 2, 3, 4} (constructeur)
+- Dictionnaire :  d = {"alice": 25, "bob": 14, "charlie": 17}
+                  d = dict([("alice", 25), ("bob", 14), ("charlie", 17)])
+
+                  -> pour parcourrir : for (k, v) in d.items():
+                                                     d.values()
+                                                     d.keys()
+
+- list -> del(t[t.index(x)]) : supprime a l'indice x 
+
+***** TP4 *****
+- Exceptions
+- Fichiers : f = open("toto.txt")
+             for line in f:   # parcours du fichier (va afficher le fichier)
+                print(line.rstrip())
+
+            OU 
+
+            f=open("toto.txt")
+            lines=f.readlines()
+            for line in lines :
+                print(line.strip())
+
+            -> str.strip(string.punctuation) : supprime la ponstuation d'une de str
